@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dashboard Gráfico de Divisas</title>
+</head>
+<body>
+
+    <header id="header">
+        <h1>GRÁFICO DIVISAS 2023</h1>
+    </header>
+
+      <div id="selectform">
+        <form id="comboboxfather">
+          <select id="combobox">
+              <option value="uf">UF</option>
+              <option value="bitcoin">Bitcoin</option>
+              <option value="dolar">Dolar</option>
+              <option value="euro">Euro</option>
+              <option value="utm">UTM</option>
+          </select>
+          </form>
+      </div>
+      <div id="graphsection">
+        <div id="graphtitle">
+          <h2>UF</h2>
+        </div>
+        <div id="graphbox">
+            <div class="chart-container">
+                <canvas id="mychart" style="width:100%;max-width:100%"></canvas>
+            </div>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <h1>by PASCAL CORREA ©2023</h1>
+      </footer>
+
+<script type="module" src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

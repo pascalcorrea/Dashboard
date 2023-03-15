@@ -1,0 +1,112 @@
+* {
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+#header {
+    text-align: center;
+    background-color: #01384C;
+    padding: 2rem;
+}
+
+#header > h1 {
+    color: #32D4AE;
+    font-size: 4rem;
+}
+
+#selectform {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #32D4AE;
+}
+
+#selectform > form > select {
+    background-color: #01384C;
+    color: white;
+    width: 20rem;
+    min-width: 10rem;
+    font-size: 2rem;
+}
+
+#graphsection {
+    text-align: center;
+    padding: 1rem;
+    background-color: #01384C;
+}
+
+#graphtitle {
+    padding: 1rem;
+    font-size: 2rem;
+    color: #32D4AE;
+}
+
+#graphbox {
+    padding: 5rem;
+    margin: 1rem 5rem 1rem 5rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+#footer {
+    padding: 2rem;
+    background-color: #32D4AE;
+    text-align: center;
+}
+
+#footer > h1 {
+    color: #01384C;
+}
+
+@media only screen and (min-width: 400px ) {
+    .chart-container{
+      height: 600px;
+      align-self: center;
+      margin: auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 400px) {
+    #graphsection{
+      padding: 2px;
+    }
+    #graphbox{
+      padding: 1rem;
+      margin: 1rem ;
+      justify-self: center;
+    }
+  }
+
+
+  @media only screen and (max-width: 1300px) {
+    #graphbox{
+      padding: 1rem;
+      margin: 1rem;
+    }
+      .chart-container{
+      height: 500px;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #graphbox{
+      padding: 1rem;
+      margin: 1rem;
+    }
+      .chart-container{
+      height: 300px;
+      width: 100%;
+      margin: auto;
+    }
+  }
