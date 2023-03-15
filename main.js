@@ -1,21 +1,12 @@
-// se importa el modulo de indicadores
-import monedas from './modulo.js'
-// se ejecuta el modulo de indicadores
+import monedas from './app.js'
+import grafico from './grafico.js'
+grafico('dolar');
 monedas();
 
-// se importa el modulo de grafico
-import grafico from './graph.js'
-// se ejecuta el modulo de grafico con la variable uf inicial
-grafico('uf');
+let elemento = document.getElementById("combobox");
+let valorElemento = elemento.options[elemento.selectedIndex].value;
+let textoElemento = elemento.options[elemento.selectedIndex].text;
 
-// se trae el elemento combobox
-    let elemento = document.getElementById("combobox");
-// se extrae el valor que se encuentra seleccionado en el combobox
-    let valorElemento = elemento.options[elemento.selectedIndex].value;
-// se extrae el texto en el elemento combobox
-    let textoElemento = elemento.options[elemento.selectedIndex].text;
-
-// funcion que ejecuta el modulo de grafico segun lo que contenga el elemento combobox
 function seleccionaIndicador() {
     elemento = document.getElementById("combobox");
     valorElemento = elemento.options[elemento.selectedIndex].value;
@@ -34,8 +25,8 @@ function seleccionaIndicador() {
     `
 
     grafico(valorElemento);
-  }
+}
 
-  document
+document
     .getElementById("combobox")
     .addEventListener("change",seleccionaIndicador);
